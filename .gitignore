@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+*.joblib
+
+# Sanal ortam
+venv/
+
+# Büyük klasörler ve dosyalar
+gpt2-turkish-chatbot/
+bert_model/
+veritabani.db
+
+# Opsiyonel: eğitim csv dosyaları
+chatbot_veriseti.csv
+turkish_polite_chat.csv

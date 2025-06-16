@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kayıt Ol</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .register-box {
+      background: white;
+      padding: 35px 45px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .register-box h2 {
+      margin-bottom: 25px;
+      font-weight: bold;
+      color: #0072ff;
+    }
+
+    .register-box h2::before {
+      content: "📝 ";
+    }
+
+    .register-box .form-control {
+      border-radius: 8px;
+      height: 45px;
+    }
+
+    .register-box button {
+      border-radius: 8px;
+      width: 100%;
+      height: 45px;
+      font-weight: bold;
+      background-color: #0072ff;
+      color: white;
+      border: none;
+      transition: 0.3s ease;
+    }
+
+    .register-box button:hover {
+      background-color: #0056c9;
+    }
+
+    .register-box .login {
+      margin-top: 15px;
+    }
+
+    .register-box .login a {
+      color: #0072ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .register-box .login a:hover {
+      text-decoration: underline;
+    }
+
+    .back-btn {
+      display: block;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .back-btn a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #0072ff;
+    }
+
+    .back-btn a i {
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <div class="back-btn">
+      <a href="/"><i class="fas fa-arrow-left"></i> Anasayfaya Dön</a>
+    </div>
+
+    <h2>Kayıt Ol</h2>
+    <form method="POST">
+      <div class="mb-3">
+        <input type="text" name="kullanici" class="form-control" placeholder="Kullanıcı Adı" required>
+      </div>
+      <div class="mb-3">
+        <input type="password" name="parola" class="form-control" placeholder="Parola" required>
+      </div>
+      <button type="submit">Kayıt Ol</button>
+    </form>
+    <div class="login">
+      Zaten bir hesabınız var mı? <a href="/giris">Giriş Yap</a>
+    </div>
+  </div>
+</body>
+</html>
